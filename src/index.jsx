@@ -4,9 +4,11 @@ import "./index.css";
 
 const App = () => (
   <div className="app__container">
-    <h2 className="roboto-bold">
-      {"\u2728"} Timeline of events {"\u2728"}
-    </h2>
+    <header>
+      <h2 className="roboto-bold">
+        {"\u2728"} Timeline of events {"\u2728"}
+      </h2>
+    </header>
     <Timeline />
   </div>
 );
