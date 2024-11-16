@@ -1,5 +1,7 @@
 import React from "react";
 import useData from "../../hooks/useData";
+import { calculateDays } from "../../utils";
+import Event from "../event";
 
 import "./styles.css";
 
@@ -13,14 +15,9 @@ function Timeline() {
   const endDate = new Date(
     Math.max(...data.map((event) => new Date(event.end).getTime()))
   );
-
-  const totalDays =
+  const numberOfDays =
     (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24);
-
-  const days = Array.from({ length: totalDays + 1 }, (_, i) => {
-    const currentDate = new Date(startDate.getTime() + i * 24 * 60 * 60 * 1000); // Here we are converting UNIX timestamps to days
-    return currentDate.toISOString().split("T")[0]; // Taking only the YYYY-MM-DD part
-  });
+  const days = calculateDays(startDate, numberOfDays);
 
   return (
     <div className="timeline__container">
@@ -29,6 +26,12 @@ function Timeline() {
           <div key={index} className="timeline-day roboto-regular">
             {day}
           </div>
+        ))}
+      </div>
+
+      <div className="timeline__events-grid">
+        {data.map((event) => (
+          <Event event={event} startDate={startDate} />
         ))}
       </div>
     </div>
