@@ -1,10 +1,13 @@
 import { createRoot } from "react-dom/client";
-import timelineItems from "./timelineItems";
+import Timeline from "./components/timeline";
+import "./index.css";
 
 const App = () => (
-  <div>
-    <h2>Start editing to see some magic happen {"\u2728"}</h2>
-    <h3>{timelineItems.length} timeline items to render</h3>
+  <div className="app__container">
+    <h2 className="roboto-bold">
+      {"\u2728"} Timeline of events {"\u2728"}
+    </h2>
+    <Timeline />
   </div>
 );
 
