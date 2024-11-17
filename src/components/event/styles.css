@@ -18,6 +18,13 @@
   white-space: nowrap;
 }
 
+.event__body {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
 .event__description {
   font-size: 12px;
   color: white;
@@ -25,4 +32,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.event__action-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.event__action-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

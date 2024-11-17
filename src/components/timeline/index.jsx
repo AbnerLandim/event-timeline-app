@@ -6,7 +6,7 @@ import Event from "../event";
 import "./styles.css";
 
 function Timeline() {
-  const { data } = useData();
+  const { data, updateData } = useData();
 
   // Getting the earliest and latest dates for the timeline
   const startDate = new Date(
@@ -31,7 +31,7 @@ function Timeline() {
 
       <div className="timeline__events-grid">
         {data.map((event) => (
-          <Event event={event} startDate={startDate} />
+          <Event key={event.id} eventId={event.id} startDate={startDate} />
         ))}
       </div>
     </div>
