@@ -1,5 +1,7 @@
 ![alt text](image-1.png)
 
+You can access the app deployed here 👉 [CLICK ME](https://event-timeline-app-oyset.ondigitalocean.app/).
+
 **Answers about this test:**
 
 - How long you spent on the assignment.
