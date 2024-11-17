@@ -11,8 +11,6 @@ function useData() {
     );
   }, [data]);
 
-  console.log("🚀 ~ useData ~ eventsWithLanes:", eventsWithLanes);
-
   function updateData(newData = {}) {
     setData((prev) => {
       const isUpdated = prev.some((each) => each.id === newData.id);
