@@ -20,4 +20,4 @@
   <br /><br />
 - How you would test this if you had more time.
   <br /><br />
-  _If i were to test this app, I'd probably end up with integration cases, as they are really effective if compared to unit tests. I'd test edition scenarios, as well as different sets of data. The good thing about my implementation is that the code is modular, so I'd be able to mock the hooks, the utility function and so on._
+  _If I were to test this app, I'd probably end up with integration cases, as they are really effective if compared to unit tests. I'd test edition scenarios, as well as different sets of data. The good thing about my implementation is that the code is modular, so I'd be able to mock the hooks, the utility function and so on._
