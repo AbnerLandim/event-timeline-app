@@ -1,3 +1,7 @@
+![alt text](image-1.png)
+
+**Answers about this test:**
+
 - How long you spent on the assignment.
   <br /><br />
   _It took me about 4 hours._
